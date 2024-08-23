@@ -178,6 +178,57 @@ main {
     border-bottom: 1px solid rgba(224, 224, 224, 1);
 }
 
+.dashboard-info {
+    margin: 0 18px;
+}
+
+.dashboards-img {
+    width: 246px;
+    height: 180px;
+}
+
 .dashboards-span {
     display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1.2rem 0 2.2rem 0;
+}
+
+.dashboard-year {
+    background-color: rgba(20, 40, 80, 1);
+    color: aliceblue;
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding: 3px 5px;
+    border-radius: 16px;
+}
+
+.container-features h4 {
+    font-size: 2.2rem;
+    line-height: 6rem;
+    margin-top: 1.5rem;
+}
+
+.dashboard-gray {
+    color: rgba(134, 149, 164, 1);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5.1rem 0 5.4rem 0;
+}
+
+.container-footer p {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-top: 2.6rem;
+}
+
+.logo {
+    display: flex;
+    gap: 3.5rem;
 }
