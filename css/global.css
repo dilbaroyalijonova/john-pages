@@ -32,6 +32,7 @@ body {
     color: var(--darc-color);
     font-size: 1.6rem;
     line-height: 2.3rem;
+    font-weight: 400;
 }
 
 main {
@@ -112,8 +113,51 @@ main {
     background-color: #622d2d;
 }
 
+.resent-main {
+    background-color: rgba(237, 247, 250, 1);
+}
+
 .resent-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2.2rem 0 2.7rem 0;
+}
+
+.resent-header a {
+    color: rgba(0, 168, 204, 1);
+}
+
+.resent-header h4 {
+    line-height: 6rem;
+    font-size: 2.2rem;
+}
+
+.resent-main1 {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.2rem;
+}
+
+.resent-block {
+    padding: 2.4rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.resent-block h3 {
+    max-width: 374px;
+    line-height: 3.8rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.date {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    margin-right: 1rem;
+}
+
+.profession {
+    border-left: 1px solid rgba(0, 0, 0, 1);
 }
