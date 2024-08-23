@@ -1,8 +1,6 @@
 @import "./fonts.css";
 @import "./variables.css";
-*,
-*:: after,
-*:: before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,15 +99,16 @@ main {
     margin-bottom: 4.7rem;
 }
 
-.main-info button {
+.main-info a {
     background-color: #db1616;
     color: rgba(255, 255, 255, 1);
     padding: 19px 21px;
     border-radius: 5px;
     transition: all 0.5s;
+    display: inline-block;
 }
 
-.main-info button :hover {
+.main-info a:hover {
     background-color: #622d2d;
 }
 
@@ -140,6 +139,17 @@ main {
     padding-bottom: 3.2rem;
 }
 
+.resent-main1 .main-img img {
+    width: 243px;
+    height: 243px;
+    transition: var(--transition);
+}
+
+.main-container .main-img img:hover {
+    transform: rotate(15deg);
+    filter: contrast(150%);
+}
+
 .resent-block {
     padding: 2.4rem;
     background-color: rgba(255, 255, 255, 1);
@@ -160,4 +170,14 @@ main {
 
 .profession {
     border-left: 1px solid rgba(0, 0, 0, 1);
+}
+
+.dashboards {
+    display: flex;
+    padding: 3rem 0 3rem 0;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+}
+
+.dashboards-span {
+    display: flex;
 }
