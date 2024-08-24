@@ -75,6 +75,14 @@ main {
     color: #ff6464;
 }
 
+.nav-hide-show {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -231,4 +239,89 @@ main {
 .logo {
     display: flex;
     gap: 3.5rem;
+}
+
+@media screen and(max-width:1200px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and(max-width:992px) {
+    .main-container .main-info {
+        width: 400px;
+    }
+    .main-container {
+        padding-top: 7rem;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .sitenav-link {
+        font-size: 1.6rem;
+    }
+    .main-container {
+        padding-top: 3rem;
+    }
+    .main-container {
+        gap: 1.5rem;
+    }
+    .main-info h1 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+    .main-container.main-info {
+        width: 320px;
+    }
+    .main-info a {
+        font-size: 2rem;
+    }
+}
+
+@media screen and(max-width:576px) {
+    .sitenav-link {
+        display: none;
+    }
+    .nav-bar {
+        display: block;
+    }
+    #nav-hide-show:checked+.sitenav-list {
+        display: block;
+    }
+    .sitenav {
+        position: relative;
+    }
+    .sitenav-list {
+        background-color: rgba(237, 247, 250, 1);
+        flex-direction: column;
+        position: absolute;
+        width: 50vw;
+        top: 1.5rem;
+        height: 100vh;
+        text-align: center;
+        padding-top: 2rem;
+        transition: all 0.5s;
+    }
+    .main-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .main-container img {
+        width: 180px;
+    }
+    .resent-header a {
+        font-size: 1.8rem;
+        display: none;
+    }
+    .resent-header {
+        align-items: center;
+    }
+    .resent-main1 {
+        flex-direction: column;
+    }
+    .dashboards {
+        flex-direction: column;
+    }
 }
